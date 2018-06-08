@@ -44,13 +44,20 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1"  Color="#d3d3d3" VerticalOptions="Center" />
-            <Entry 
+            <Editor 
+                BackgroundColor="Silver"
                 Grid.Row="1"
                 Grid.Column="0"
                 VerticalOptions="FillAndExpand"
                 HeightRequest="25" 
-                Placeholder="Message" 
                 Text="{Binding OutText}"/>
+            <!--Entry 
+                Grid.Row="1"
+                Grid.Column="0"
+                VerticalOptions="FillAndExpand"
+                HeightRequest="25" 
+                Placeholder="Message"
+                Text="{Binding OutText}"/-->
 
             <Image Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Source="senticon.png">
                 <Image.GestureRecognizers>
